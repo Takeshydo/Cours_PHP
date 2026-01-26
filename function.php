@@ -12,18 +12,17 @@ class Smartphone {
     }
     public function appeler(){
         if($this->batterie > 0){
-            echo "Allo ?";
+            return "Allo ?";
         } else{
-            echo "Plus de batterie";
+            return "Plus de batterie";
         }
     }
-
-
 }
+
 $MonSmartphone = new Smartphone();
 $MonSmartphone->marque = "Xiaomi";
 $MonSmartphone->modele = "Redmi";
 echo $MonSmartphone->batterie;
-//$MonSmartphone->charge();
-$MonSmartphone->appeler();
+//echo $MonSmartphone->charge();
+echo $MonSmartphone->appeler();
 ?>
