@@ -15,10 +15,12 @@ class User{
         else{
             return "Attribue vide";
         }
+        return $this;
     }
 }
 $chef = New User();
 $chef->setPseudo("Mathys");
 echo "Bienvenue Chef ". $chef->getPseudo() . "<br>";
+
 
 ?>
