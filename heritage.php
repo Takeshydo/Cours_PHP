@@ -43,8 +43,8 @@ class Chat extends Animal{
 
 
 
-$Doggo = New Chien("pablo", "45kg", "Berger Allemand");
-$CatCat = New Chat("Esteban", "20kg", "Blanc, Noir, Orange");
+$Doggo = New Chien("pablo", 45, "Berger Allemand");
+$CatCat = New Chat("Esteban", 20, "Blanc, Noir, Orange");
 echo $Doggo->manger() . "<br>";
 echo $Doggo->Bark() . "<br>";
 echo $Doggo->poids  . "<br>";
