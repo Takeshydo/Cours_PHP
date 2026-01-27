@@ -5,6 +5,7 @@ class Animal
 {
     public $name;
     public $poids;
+
     public function __construct($n, $p){
         $this->name = $n;
         $this->poids = $p;
@@ -20,8 +21,6 @@ class Chien extends Animal{
     public $race;
     public function __construct($n, $p, $r){
         parent::__construct($n, $p);
-        $this->name = $n;
-        $this->poids = $p;
         $this->race = $r;
     }
 
@@ -34,12 +33,10 @@ class Chat extends Animal{
     public $CouleurPoils;
     public function __construct($n, $p, $cP){
         parent::__construct($n, $p);
-        $this->name = $n;
-        $this->poids = $p;
         $this->CouleurPoils = $cP;
     }
 
-    public function Bark(){
+    public function mioler(){
         return $this->name . " Miaou MIAOU !!!";
     }
 }
@@ -53,6 +50,6 @@ echo $Doggo->Bark() . "<br>";
 echo $Doggo->poids  . "<br>";
 
 echo $CatCat->manger() . "<br>";
-echo $CatCat->Bark() . "<br>";
+echo $CatCat->mioler() . "<br>";
 echo $CatCat->poids  . "<br>";
 ?>
