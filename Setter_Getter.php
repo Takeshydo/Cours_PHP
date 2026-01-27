@@ -15,7 +15,6 @@ class User{
         else{
             return "Attribue vide";
         }
-        return $this;
     }
 }
 $chef = New User();
